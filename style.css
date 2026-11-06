@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    outline: 0;
 }
 
 body {
@@ -22,9 +21,15 @@ header {
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
+    text-decoration: none;
     color: #DDD;
+    cursor: pointer;
+    background-color: rgb(6, 4, 113);
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
 }
 
 .nav-list {
@@ -45,3 +50,87 @@ header {
 }
 
 /* FIM HEADER */
+
+/* INÍCIO MAIN */
+
+/* INÍCIO HOME */
+#inicio {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #000000;
+    background-image: url("img/programador.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.primeira-section h1 {
+    color: #ffffff;
+    font-size: 54px;
+    line-height: 1;
+}
+
+.primeira-section p {
+    font-size: 24px;
+    font-style: italic;
+    color: #1e96FC;
+    margin: 10px 0 35px 0;
+}
+
+.call-to-action {
+    text-decoration: none;
+    color: #181818;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.call-to-action:hover {
+    opacity: 90%;
+}
+
+.conteudo {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* FIM HOME */
+
+/* INÍCIO SOBRE */
+#sobre {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 80px 0 80px 0;
+}
+
+.conteudo-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo-sobre div {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 40px;
+}
+
+.conteudo-sobre img {
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+.conteudo-sobre div h2 {
+    font-size: 32px;
+}
+/* FIM SOBRE */
+
+/* FIM MAIN */
